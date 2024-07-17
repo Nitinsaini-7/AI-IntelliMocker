@@ -39,7 +39,7 @@ const Benefits = () => {
 
   return (
     <div>
-        <h1 data-aos="fade-up" className='text-center text-4xl font-semibold my-10'>Benefits</h1>
+        <h1 data-aos="fade-up" className='text-center text-4xl font-semibold my-10 underline underline-offset-8 decoration-blue-500'>Benefits</h1>
 
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 lg:mx-2'>
         {benefitData.map((val)=>(

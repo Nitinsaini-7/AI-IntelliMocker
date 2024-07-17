@@ -23,7 +23,7 @@ const Upgrade = () => {
   ];
   return (
     <div>
-        <h1 data-aos="fade-up" className="text-center text-4xl font-semibold my-10">Upgrade</h1>
+        <h1 data-aos="fade-up" className="underline underline-offset-8 decoration-blue-500 text-center text-4xl font-semibold my-10">Upgrade</h1>
       <div data-aos="fade-up" className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:mx-28 mx-6">
         {cardData.map((card, index) => (
           <div

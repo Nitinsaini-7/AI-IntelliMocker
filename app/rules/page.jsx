@@ -4,7 +4,7 @@ import Rules from '../components/Rules'
 
 const RulesPage = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-24'>
         <UserHeader></UserHeader>
         <Rules></Rules>
     </div>

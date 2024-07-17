@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 const FeaturesPage = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-24'>
         <Header/>
         <Features/>
         <Footer/>

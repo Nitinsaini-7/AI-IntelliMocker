@@ -73,8 +73,8 @@ const data = {
   return (
   
         <div className="lg:px-10 px-4 bg-white">
-      <h1 data-aos="fade-up" className="text-center text-4xl font-semibold my-10">Rules & Guidelines</h1>
-      <p className='my-4'>There are some rules and guidelines</p>
+      <h1 data-aos="fade-up" className="underline underline-offset-8 decoration-blue-500 text-center text-4xl font-semibold my-10">Rules & Guidelines</h1>
+      <p className='my-4 font-semibold'>There are some rules and guidelines regarding AI IntelliMocker:</p>
       {Object.keys(data).map((section, index) => (
         <div key={index} className="mb-8">
           <h2 className="text-xl font-bold mb-4 border-b pb-2">{section}-</h2>

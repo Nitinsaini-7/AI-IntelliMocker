@@ -43,11 +43,11 @@ const Contact = () => {
   return (
 
   <div className="w-full px-4 sm:px-6 lg:px-8 mb-10">
-    <h1 data-aos="fade-up" className='text-center text-4xl font-semibold my-10'>Contact</h1>
+    <h1 data-aos="fade-up" className='underline underline-offset-8 decoration-blue-500 text-center text-4xl font-semibold my-10'>Contact</h1>
     <div className="grid rounded-md grid-cols-1 gap-x-4 gap-y-8 lg:grid-cols-5 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_10px] lg:mx-20">
       <div data-aos="fade-right" className="lg:col-span-2 lg:py-12 mx-4 lg:m-5">
         <h2 className='text-center text-3xl my-4'>Connect With Us</h2>
-        <Image src={'/contact.avif'} height={500} width={500}></Image>
+        <Image src={'/contact.avif'} height={500} width={500} alt='contact'></Image>
         <p className='text-center'>Please take a moment to get in touch, we will get back to you shortly</p>
       </div>
 

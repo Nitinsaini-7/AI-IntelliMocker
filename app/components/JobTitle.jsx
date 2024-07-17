@@ -121,7 +121,7 @@ const JobTitles = () => {
   return (
     <div>
         <div data-aos="fade-up">
-            <h1 className='text-center text-4xl font-semibold mx-10'>Mock Interview for Over <span className='text-blue-500'>20+</span> Job Titles</h1>
+            <h1 className='text-center text-4xl font-semibold mx-10 my-10'>Mock Interview for Over <span className='text-blue-500'>20+</span> Job Titles</h1>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-y-10'>
         {jobTitle.map((val)=>(
@@ -129,7 +129,7 @@ const JobTitles = () => {
                <Link href={'/dashboard'}>
                <div data-aos="fade-up" className='bg-white w-full py-6 shadow-md rounded-md border hover:bg-blue-400 hover:text-white border-gray-50 cursor-pointer hover:transform ease-out duration-300 hover:scale-105'>
                     <div className='flex items-center justify-center'>
-                        <img src={val.cover} alt="" className='w-20 h-20 drop-shadow-lg'/>
+                        <img src={val.cover} alt="job" className='w-20 h-20 drop-shadow-lg'/>
                     </div>
                     <p className='text-center mt-6 font-bold'>{val.title}</p>
                 </div>

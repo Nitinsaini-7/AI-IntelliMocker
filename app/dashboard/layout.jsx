@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../userheader/page';
 import UserHeader from '../components/UserHeader';
 
 const DashboardLayout = ({children}) => {

@@ -16,7 +16,7 @@ const HowItWork = () => {
 
   return (
     <div>
-        <h1 data-aos="fade-up" className='text-center text-4xl font-semibold my-10'>How It Works</h1>
+        <h1 data-aos="fade-up" className='underline underline-offset-8 decoration-blue-500 text-center text-4xl font-semibold my-10'>How It Works</h1>
         <div data-aos="fade-up" className='grid grid-cols-1 mx-10 gap-5'>
             <p className='text-justify '>This free interview preparation tool allows you to practice your interview
                 techniques and produce a Video CV which can be shared with anyone, including recruiters and employers.
@@ -47,19 +47,19 @@ const HowItWork = () => {
         <div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-20 mx-5  lg:mx-20 mt-10'>
                 <div data-aos="fade-up" className='grid place-items-center shadow-custom border rounded-md p-5'>
-                    <Image src={"/answer.jpg"} height={250} width={250}></Image>
+                    <Image alt='img' src={"/answer.jpg"} height={250} width={250}></Image>
                     <p className='mb-4 font-bold'>Answer</p>
                     <p className='text-center'>Record your answers to the mock interview questions on video using a computer, or smartphone.</p>
                 </div>
 
                 <div data-aos="fade-up" className='grid place-items-center shadow-custom border rounded-md p-5'>
-                    <Image src={"/improve.jpg"} height={250} width={250}></Image>
+                    <Image alt='img' src={"/improve.jpg"} height={250} width={250}></Image>
                     <p className='mb-4 font-bold'>Improve</p>
                     <p className='text-center'>Playback your answers as often as you like or share them with someone you trust for feedback.</p>
                 </div>
 
                 <div data-aos="fade-up" className='grid place-items-center shadow-custom border rounded-md p-5'>
-                    <Image src={"/get-hired.jpg"} height={250} width={250}></Image>
+                    <Image alt='img' src={"/get-hired.jpg"} height={250} width={250}></Image>
                     <p className='mb-4 font-bold'>Get Hired</p>
                     <p className='text-center'>Standout from the crowd! Your 30% more likely to secure your new job with a video CV.</p>
                 </div>

@@ -97,7 +97,7 @@ const RecordAnsSection = ({interviewQues, activeQuesIndex, interviewData}) => {
   return (
     <div data-aos="fade-left" className='flex items-center justify-center flex-col'>
         <div className='flex flex-col justify-center items-center mb-2 rounded-lg p-5 bg-black'>
-            <Image src={'/webcam.png'} width={200} height={200} className='absolute'/>
+            <Image src={'/webcam.png'} width={200} height={200} alt='webcam' className='absolute'/>
 
             <Webcam mirrored={true} style={{
                 height:300,

@@ -51,9 +51,8 @@ const Feedback = ({params}) => {
           <>
           <h2 className='text-3xl font-bold text-green-500'>Congulation</h2>
           <h2 className='font-bold text-2xl'>Here is your interview</h2>
-        <h2 className='text-lg '>Your overall rating:  <strong>{sum}</strong></h2>
 
-        <h2>Find </h2>
+        <h2>Find your result of this Interview </h2>
         {feedbackList && feedbackList.map((item, index)=>(
             <Collapsible key={index} className='mt-5'>
               <div className='p-2 bg-secondary rounded-lg my-2 flex justify-between text-left gap-6 w-full'>

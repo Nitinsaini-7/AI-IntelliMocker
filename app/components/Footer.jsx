@@ -7,7 +7,7 @@ import {
   faInstagram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -15,11 +15,13 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl px-4 pt-2 sm:px-6 lg:px-8">
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
           <div className="mx-auto max-w-sm lg:max-w-none">
-            <Image src={"/logo.svg"} height={100} width={100}></Image>
+            <div className=" flex items-center justify-center py-2 w-full">
+            <Image src={"/logo2.png"} height={150} width={150} alt="logo" className="drop-shadow-xl shadow-white"></Image>
+            </div>
             <p className="mt-4 text-center text-white lg:text-left lg:text-lg">
-            Transform your interview skills with <span className="text-blue-500 font-bold">AI Mock Interviewer</span>.
+            Transform your interview skills with <span className="text-blue-500 font-bold">AI IntelliMocker</span>.
             <br />
-            Go-to the platform for personalized mock interviews, real-time feedback, and strategic tips to ace your career milestones
+            Go-to the platform for personalized mock interviews, real-time feedback, and strategic tips to ace your career milestones.
             </p>
 
             <div className="mt-6 flex justify-center gap-4 lg:justify-start">
@@ -136,7 +138,7 @@ const Footer = () => {
           <p className="text-center text-xs/relaxed text-gray-400">
             © Company 2024. All rights reserved.
           </p>
-            <p className="text-center text-xs/relaxed text-gray-400">Created with ❤️ By 
+            <p className="text-center text-xs/relaxed text-gray-400">Created with <FontAwesomeIcon icon={faHeart} className="text-blue-300"/> By 
               
             <Link
               href="#"

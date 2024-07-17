@@ -7,7 +7,7 @@ import Header from '../components/Header'
 
 const ContactPage = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-24'>
       <Header/>
       <Contact/>
       <Footer/>

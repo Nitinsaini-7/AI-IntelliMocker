@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 const UserHowItWork = () => {
   return (
-    <div className='mt-20 mb-10'>
+    <div className='mt-24 mb-10'>
         <UserHeader></UserHeader>
         <HowItWork></HowItWork>
     </div>

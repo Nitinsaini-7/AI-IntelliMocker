@@ -4,7 +4,7 @@ import Upgrade from '../components/Upgrade'
 
 const UpgradeUser = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-24'>
         <UserHeader></UserHeader>
         <Upgrade></Upgrade>
     </div>
