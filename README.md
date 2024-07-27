@@ -1,6 +1,6 @@
 It is a AI-based mock interview platforms use artificial intelligence (AI) to help job seekers prepare for interviews by simulating realistic interview experiences.
 
-https://ai-intellimocker.vercel.app/ 
+Live preview: https://ai-intellimocker.vercel.app/ 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
