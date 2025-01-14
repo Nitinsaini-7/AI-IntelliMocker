@@ -18,7 +18,6 @@ const StartInterview = ({params}) => {
   },[])
 
   const GetInterviewDetails = async () => {
-<<<<<<< HEAD
     try {
       const result = await db.select().from(MockInterview).where(eq(MockInterview.mockId, params.interviewId));
   
@@ -37,12 +36,6 @@ const StartInterview = ({params}) => {
   
       console.log("Parsed JSON Response:", jsonMockResponse);
   
-=======
-    const result = await db.select().from(MockInterview).where(eq(MockInterview.mockId,params.interviewId));
-      console.log(result[0])
-      const jsonMockResponse=JSON.parse(result[0].jsonMockResponse.replace(/\](.|\n)*/g, ']'))
-      console.log(jsonMockResponse);
->>>>>>> 968f5a3e5192871a9a72f14ca2318a11182ba9d7
       setInterviewQues(jsonMockResponse);
       setInterviewData(result[0]);
     } catch (error) {
