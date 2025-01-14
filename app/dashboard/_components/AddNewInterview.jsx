@@ -34,17 +34,20 @@ const AddNewInterview = () => {
         e.preventDefault()
         console.log(jobPosition,jobDesc,jobExperience)
 
-        const inputPrompt = `Job Position: ${jobPosition}, Job Description: ${jobDesc}, Years of Experience: ${jobExperience}, Depends on this information please give us ${process.env.NEXT_PUBLIC_INTERVIEW_QUESTIONS_COUNT} Interview Question with Answered in JSON Format, Give Question and Answered as field in JSON`
+        const inputPrompt = "Job Position: "+jobPosition+", Job Description: "+jobDesc+", Years of Experience: "+jobExperience+", Depends on this information please give us "+process.env.NEXT_PUBLIC_INTERVIEW_QUESTIONS_COUNT+", Interview question with answered in Json format, Give Question and Answered as field in JSON"
         
         const result = await chatSession.sendMessage(inputPrompt);
-        const mockJsonResponse = (result.response.text()).replace('```json','').replace('```','');
-        setJsonResponse(mockJsonResponse);
+        const mockJsonRes = result.response.text()
+        .replace('```json','')
+        .replace('```','');
+        // console.log(JSON.parse(mockJsonRes));
+        setJsonResponse(mockJsonRes);
 
-    if (mockJsonResponse) {
+    if (mockJsonRes) {
         const resp = await db.insert(MockInterview)
             .values({
                 mockId: uuidv4(),
-                jsonMockResponse: mockJsonResponse,
+                jsonMockResponse: mockJsonRes,
                 jobPosition: jobPosition,
                 jobDesc: jobDesc,
                 jobExperience: jobExperience,

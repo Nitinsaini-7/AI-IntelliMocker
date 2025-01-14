@@ -41,7 +41,7 @@ const QuesSection = ({interviewQues, activeQuesIndex}) => {
 
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
           {interviewQues&&interviewQues.map((question,index)=>(
-             <h2 className={`p-2 border border-gray-300 rounded-full text-xs md:text-sm text-center cursor-pointer ${activeQuesIndex==index&&'bg-blue-500 text-white border border-white'}`}>{index+1}. Question</h2>
+             <h2 key={index} className={`p-2 border border-gray-300 rounded-full text-xs md:text-sm text-center cursor-pointer ${activeQuesIndex==index&&'bg-blue-500 text-white border border-white'}`}>{index+1}. Question</h2>
           ))}
         </div>
 

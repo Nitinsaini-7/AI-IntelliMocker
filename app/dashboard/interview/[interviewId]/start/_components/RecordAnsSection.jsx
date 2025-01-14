@@ -63,8 +63,7 @@ const RecordAnsSection = ({interviewQues, activeQuesIndex, interviewData}) => {
         console.log(userAns)
         setLoading(true)
 
-        const feedBackPrompt = `Question:${interviewQues[activeQuesIndex]?.Question}, ${"User Answer:"} ${userAns}, ${"Depends on question and user answer for given interview question"}, 
-                ${"plaease give us rating (in numbers out of 10) for answer and feedback as area of improvment if any"}, ${"in just 3 to 5 line to improve it in JSON format with rating field and feedback field"}` 
+        const feedBackPrompt = "Question: "+interviewQues[activeQuesIndex]?.Question+", User Answer: "+userAns+", Depends on question and user answer for given interview question, plaease give us rating (in numbers out of 10) for answer and feedback as area of improvment if any, in just 3 to 5 line to improve it in JSON format with rating field and feedback field"
             
             const result = await chatSession.sendMessage(feedBackPrompt);
 

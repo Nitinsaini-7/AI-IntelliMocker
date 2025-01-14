@@ -124,8 +124,8 @@ const JobTitles = () => {
             <h1 className='text-center text-4xl font-semibold mx-10 my-10'>Mock Interview for Over <span className='text-blue-500'>20+</span> Job Titles</h1>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-y-10'>
-        {jobTitle.map((val)=>(
-            <div className='mx-6'>
+        {jobTitle.map((val, index)=>(
+            <div key={index} className='mx-6'>
                <Link href={'/dashboard'}>
                <div data-aos="fade-up" className='bg-white w-full py-6 shadow-md rounded-md border hover:bg-blue-400 hover:text-white border-gray-50 cursor-pointer hover:transform ease-out duration-300 hover:scale-105'>
                     <div className='flex items-center justify-center'>

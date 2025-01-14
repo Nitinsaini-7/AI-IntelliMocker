@@ -42,8 +42,8 @@ const Benefits = () => {
         <h1 data-aos="fade-up" className='text-center text-4xl font-semibold my-10 underline underline-offset-8 decoration-blue-500'>Benefits</h1>
 
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 lg:mx-2'>
-        {benefitData.map((val)=>(
-            <div className='mx-6 lg:mx-4'>
+        {benefitData.map((val, index)=>(
+            <div key={index} className='mx-6 lg:mx-4'>
                <div data-aos="fade-up" className='bg-blue-100 w-full rounded-md cursor-pointer p-4'>
                     <div className='flex items-center justify-center'>
                         <img src={val.cover} alt="" className='w-20 h-20'/>

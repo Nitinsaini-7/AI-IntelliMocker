@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import HomeHeader from "./components/Header";
 import HomePage from "./components/Home";
 import JobTitles from "./components/JobTitle";
