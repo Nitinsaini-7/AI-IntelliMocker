@@ -1,15 +1,20 @@
-import React from 'react'
-import UserHeader from '../components/UserHeader';
+import Sidebar from "./_components/Sidebar";
+import DashboardHeader from "./_components/DashboardHeader";
 
-const DashboardLayout = ({children}) => {
+export const metadata = {
+  title: "Dashboard",
+};
+
+export default function DashboardLayout({ children }) {
   return (
-    <div>
-      <UserHeader></UserHeader>
-      <div className='mx-5 md:mx-20 lg:mx-36'>
-        {children}  
+    <div className="flex h-screen overflow-hidden">
+      <Sidebar />
+      <div className="flex flex-1 flex-col overflow-hidden">
+        <DashboardHeader />
+        <main className="flex-1 overflow-y-auto p-6">
+          {children}
+        </main>
       </div>
     </div>
-  )
+  );
 }
-
-export default DashboardLayout;

@@ -1,9 +1,13 @@
+import { config } from "dotenv";
+
+config({ path: ".env.local" });
+
 /** @type { import("drizzle-kit").Config } */
 export default {
-    schema: "./utils/schema.js",
-    dialect: 'postgresql',
-    dbCredentials: {
-    url: 'postgresql://AI-IntelliMocker-DB_owner:qk2DmTdY5Fpo@ep-round-band-a5mb8t50.us-east-2.aws.neon.tech/AI-IntelliMocker-DB?sslmode=require'
-    }
-  };
-  
+  schema: "./utils/schema.js",
+  dialect: 'postgresql',
+  out: "./drizzle",
+  dbCredentials: {
+    url: process.env.DATABASE_URL || process.env.NEXT_PUBLIC_DRIZZLE_DB_URL,
+  },
+};
