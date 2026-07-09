@@ -102,7 +102,7 @@ export default function NewInterviewPage() {
     const result = partialSchema.safeParse(form);
     if (!result.success) {
       const errs = {};
-      result.error.errors.forEach((e) => {
+      (result.error?.issues ?? []).forEach((e) => {
         errs[e.path[0]] = e.message;
       });
       setErrors(errs);
