@@ -16,12 +16,12 @@ const Footer = () => {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
           <div className="mx-auto max-w-sm lg:max-w-none">
             <div className=" flex items-center justify-center py-2 w-full">
-            <Image src={"/logo2.png"} height={150} width={150} alt="logo" className="drop-shadow-xl shadow-white"></Image>
+              <Image src={"/logo2.png"} height={150} width={150} alt="logo" className="drop-shadow-xl shadow-white"></Image>
             </div>
             <p className="mt-4 text-center text-white lg:text-left lg:text-lg">
-            Transform your interview skills with <span className="text-blue-500 font-bold">AI IntelliMocker</span>.
-            <br />
-            Go-to the platform for personalized mock interviews, real-time feedback, and strategic tips to ace your career milestones.
+              Transform your interview skills with <span className="text-blue-500 font-bold">AI IntelliMocker</span>.
+              <br />
+              Go-to the platform for personalized mock interviews, real-time feedback, and strategic tips to ace your career milestones.
             </p>
 
             <div className="mt-6 flex justify-center gap-4 lg:justify-start">
@@ -78,32 +78,32 @@ const Footer = () => {
               <strong className="text-gray-300 font-bold"> Company </strong>
 
               <ul className="mt-6">
-                  <Link
+                <Link
                   className="transition hover:text-white"
-                    href="#"
-                    >
-                    <li>
+                  href="#"
+                >
+                  <li>
                     About
-                </li>
-                  </Link>
+                  </li>
+                </Link>
 
-                  <Link
+                <Link
                   className="transition hover:text-white"
-                    href="/contact"
-                    >
-                    <li>
+                  href="/contact"
+                >
+                  <li>
                     Contact
-                </li>
-                  </Link>
+                  </li>
+                </Link>
 
-                  <Link
-                    className="transition hover:text-white"
-                    href="#"
-                    >
-                    <li>
+                <Link
+                  className="transition hover:text-white"
+                  href="#"
+                >
+                  <li>
                     Privacy & Terms
-                </li>
-                  </Link>
+                  </li>
+                </Link>
 
               </ul>
             </div>
@@ -112,23 +112,23 @@ const Footer = () => {
               <strong className="font-bold text-gray-300"> Product </strong>
 
               <ul className="mt-6 space-y-4">
-                  <Link
-                    className="transition hover:text-white"
-                    href="/features"
-                    >
-                    <li>
+                <Link
+                  className="transition hover:text-white"
+                  href="/features"
+                >
+                  <li>
                     Features
-                </li>
-                  </Link>
+                  </li>
+                </Link>
 
-                  <Link
-                    className="transition hover:text-white"
-                    href="upgrade"
-                    >
-                    <li>
+                <Link
+                  className="transition hover:text-white"
+                  href="upgrade"
+                >
+                  <li>
                     Pricing
-                </li>
-                  </Link>
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
@@ -138,11 +138,11 @@ const Footer = () => {
           <p className="text-center text-xs/relaxed text-gray-400">
             © Company 2024. All rights reserved.
           </p>
-            <p className="text-center text-xs/relaxed text-gray-400">Created with <FontAwesomeIcon icon={faHeart} className="text-blue-300"/> By 
-              
+          <p className="text-center text-xs/relaxed text-gray-400">Created with <FontAwesomeIcon icon={faHeart} className="text-blue-300" /> By
+
             <Link
               href="#"
-              >
+            >
               <span> Nitin Saini</span>
             </Link>
           </p>

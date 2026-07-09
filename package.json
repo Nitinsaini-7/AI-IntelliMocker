@@ -17,6 +17,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@getbrevo/brevo": "^6.0.2",
     "@google/generative-ai": "^0.24.1",
     "@heroicons/react": "^2.1.4",
     "@neondatabase/serverless": "^0.9.4",

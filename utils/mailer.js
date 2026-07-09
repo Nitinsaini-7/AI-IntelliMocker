@@ -1,10 +1,12 @@
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: process.env.BREVO_SMTP_HOST,
+  port: Number(process.env.BREVO_SMTP_PORT) || 587,
+  secure: false,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: process.env.BREVO_SMTP_LOGIN,
+    pass: process.env.BREVO_API_KEY,
   },
 });
 
@@ -13,7 +15,7 @@ const transporter = nodemailer.createTransport({
  */
 export async function sendWelcomeEmail({ to, name }) {
   await transporter.sendMail({
-    from: `"AI IntelliMocker" <${process.env.EMAIL_USER}>`,
+    from: `"AI IntelliMocker" <${process.env.BREVO_SENDER_EMAIL}>`,
     to,
     subject: "Welcome to AI IntelliMocker 🚀",
     html: `
@@ -24,10 +26,10 @@ export async function sendWelcomeEmail({ to, name }) {
         <ul style="font-size: 15px; line-height: 2;">
           <li>📄 Upload and analyze your resume</li>
           <li>🤖 Generate AI mock interviews</li>
-          <li>🎯 Get detailed AI feedback & scores</li>
+          <li>🎯 Get detailed AI feedback &amp; scores</li>
           <li>📊 Track your improvement over time</li>
         </ul>
-        <a href="${process.env.NEXT_PUBLIC_APP_URL}/dashboard" 
+        <a href="${process.env.NEXT_PUBLIC_APP_URL}/dashboard"
            style="display: inline-block; background: #6366f1; color: white; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px;">
           Go to Dashboard →
         </a>
@@ -42,7 +44,7 @@ export async function sendWelcomeEmail({ to, name }) {
  */
 export async function sendInvitationEmail({ to, candidateName, recruiterName, jobTitle, interviewLink }) {
   await transporter.sendMail({
-    from: `"AI IntelliMocker" <${process.env.EMAIL_USER}>`,
+    from: `"AI IntelliMocker" <${process.env.BREVO_SENDER_EMAIL}>`,
     to,
     subject: `Interview Invitation — ${jobTitle}`,
     html: `
@@ -50,7 +52,7 @@ export async function sendInvitationEmail({ to, candidateName, recruiterName, jo
         <h1 style="color: #6366f1;">Interview Invitation 🎯</h1>
         <p>Hi ${candidateName},</p>
         <p><strong>${recruiterName}</strong> has invited you to complete an AI-powered interview for the position of <strong>${jobTitle}</strong>.</p>
-        <a href="${interviewLink}" 
+        <a href="${interviewLink}"
            style="display: inline-block; background: #6366f1; color: white; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 20px 0;">
           Start Interview →
         </a>

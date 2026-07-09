@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
   faInstagram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
@@ -46,16 +45,6 @@ const Footer = () => {
                   </Link>
                 </li>
 
-                <li>
-                  <Link href={""}>
-                    <div className="group w-11 h-11 flex items-center justify-center rounded-full bg-sky-500 hover:bg-white">
-                      <FontAwesomeIcon
-                        className="text-2xl text-white group-hover:text-blue-500"
-                        icon={faFacebook}
-                      />
-                    </div>
-                  </Link>
-                </li>
 
                 <li>
                   <Link href={""}>
